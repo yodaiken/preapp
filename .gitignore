@@ -1,0 +1,8 @@
+# Virtual Environment
+/venv
+
+# Environment Variables
+/.env
+
+# Python
+*.pyc

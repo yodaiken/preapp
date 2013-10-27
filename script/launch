@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+cd $SCRIPT_PATH/..
+
+if [ ! -d venv ]; then
+    virtualenv venv
+fi
+. venv/bin/activate
+
+foreman run python launch.py
