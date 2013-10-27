@@ -50,3 +50,11 @@ changes:
 To run commands, instead of `$ cmd arg1 arg2`, use:
 
     $ script/run cmd arg1 arg2
+
+To start the server in development mode, use:
+
+    $ script/launch
+
+To start the server under gunicorn (Heroku mode), use:
+
+    $ script/hlaunch
