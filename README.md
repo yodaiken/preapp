@@ -29,8 +29,10 @@ This will be used to store all client secrets.
 
 Here is a sample `.env` which contains all the neccessary keys:
 
-    # Environment file
-    # TODO add keys
+    DEBUG=true
+    REDIS_URL="redis://localhost:6379/0"
+    REDIS_MAX_CONNECTIONS=10
+    POSTGRES_URI=postgresql://root@localhost/app
 
 ## Scripts
 

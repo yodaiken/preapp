@@ -12,6 +12,8 @@ app = Flask(
     static_folder=os.path.join(os.path.dirname(os.path.realpath(__file__)), '../public'),
     static_url_path='/public')
 
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["POSTGRES_URI"]
+
 db = SQLAlchemy(app)
 
 def make_redis():

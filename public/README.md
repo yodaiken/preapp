@@ -1,1 +1,0 @@
-The URL to this file is /static/README.txt
